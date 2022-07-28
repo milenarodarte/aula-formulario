@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Select</title>
+</head>
+<body>
+    <form>
+        <label for="plano">Plano</label>
+        <div></div>
+        <!--quando coloca required = true entao precisa ter um valor escrito para poder ser selecionável-->
+        <select name="plano" required="true">
+            <!--o value serve para enviar ao servidor, futuro, o resultado da escolha.-->
+            <!-- a tag pai e filho funciona também, lê-se plano + free ou premium-->
+            <option value="">
+                Escolher Plano
+            </option>
+            <option value="Free">
+                Free
+            </option>
+            <option value="Premium">
+                Premium
+            </option>
+        </select>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <form>
+        <!--cols=colunas e rows=linhas-->
+        <label for="mensagem">mensagem</label>
+        <div></div>
+        <textarea 
+        placeholder="digite a sua mensagem" 
+        id="mensagem" 
+        cols="25"
+        rows="5"
+        name="mensagem"
+        required="true">
+    
+        </textarea>
+        <div></div>
+        <button type="submit">Enviar</button>
+    </form>
+
+
+
+</body>
+</html>
